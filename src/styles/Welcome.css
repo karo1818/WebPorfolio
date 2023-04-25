@@ -1,0 +1,45 @@
+
+.greeting-div{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin-bottom: 10%;
+}
+
+.left {
+    width: 50%;
+}
+
+.right{
+    width: 50%;
+}
+
+.greeting {
+    color: white;
+    font-size: 5rem;
+    text-align: left;
+    margin: -10px;
+    margin-left: 15%;
+  }
+  
+.information {
+    color: white;
+    font-size: 2rem;
+    text-align: left;
+    margin-left: 15%;
+    
+  }
+
+.profile{
+    margin-top: 8%;
+    width: 40%;
+    border-radius: 50%;
+}
+
+
+ 
+  
+
+
+  
+  

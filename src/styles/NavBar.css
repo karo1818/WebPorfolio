@@ -1,0 +1,33 @@
+.navbar{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #FFF;
+    padding: 15px;
+}
+
+.navbar a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.nav_logo{
+    margin-right: 50px;
+    width: 8%;
+    border-radius: 50%;
+}
+
+.list{
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+#toggler,  .navbar label{
+    display: none;
+}
+
+.navbar{
+    height: 80px;
+}
