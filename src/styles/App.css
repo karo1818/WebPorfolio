@@ -1,0 +1,21 @@
+html,body{
+  background-color: #1D1D1D;
+  font-family: sans-serif;
+
+}
+
+
+.aplicacion-tareas{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+}
+
+
+
+
+
+
+
+

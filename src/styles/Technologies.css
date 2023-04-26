@@ -1,0 +1,35 @@
+.principal-container{
+  
+    width: 500px;
+    min-height: 220px;
+    background-color: #d0d0d5;
+    padding: 25px;
+    margin: 10px;
+    border-radius: 26px;
+    text-align: center;
+  }
+
+  .tareas-lista-principal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+.tareas-lista-principal{
+    border: none;
+   }
+   
+   .tools {
+    width: calc(20% - 10px);
+    height: 100%;
+    animation: mover 1s ease-in-out infinite alternate;
+  }
+  
+  @keyframes mover {
+    from {
+      transform: translate(0, 0);
+    }
+    to {
+      transform: translate(5px, 5px);
+    }
+  }
