@@ -3,6 +3,7 @@ import Navbar from './NavBar';
 import Welcome from './Welcome';
 import Technologies from './Technologies';
 import AboutMe from './AboutMe';
+import Projects from './Projects';
 
 function App() {
   return (
@@ -14,11 +15,13 @@ function App() {
 
       <div className='aplicacion-tareas'>
         
-      <Technologies/>
-      <AboutMe/>
+       <Technologies/>
+       <AboutMe/>
         
         
       </div>
+
+      <Projects/>
      
     </div>
   );

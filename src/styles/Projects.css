@@ -1,0 +1,46 @@
+.whitesection{
+    text-align: center;
+    margin-top: 2%;
+    background-color: white;
+  }
+
+.infoprojects{
+    width: 100%;
+	height: 30vh;
+	border: 5px solid #cccccc;
+	margin: 5px;
+    text-align: justify;
+}
+
+.screens{
+    height: 30vh;
+    width:100% ;
+    margin-top: 8vh;
+}
+
+.contenedor-projects{
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.projects-internos{
+
+    text-align: center;
+    width: 50%;
+    margin-left: 10vh;
+    margin-right: 10vh;
+
+}
+
+.projects-internos-img img{
+    display: none;
+    text-align: center;
+    width: 50%;
+    margin-left: 10vh;
+    margin-right: 10vh;
+
+}
+.projects-internos img:first-child{
+    display: block;
+}

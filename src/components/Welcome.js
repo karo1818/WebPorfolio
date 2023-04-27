@@ -18,7 +18,7 @@ function Welcome() {
 
         <div className='right'>
 
-           <img className='profile'
+           <img alt='profilepciture' className='profile'
              src={profile} />
 
         </div>

@@ -1,0 +1,16 @@
+{
+    "project": "Project with a FRONTEND (interface) and a BACKEND (service) component, for the management of the ELECTRONIC MEDICAL RECORD of patients who are clients of doctors. The FrontEnd should be developed using Html, Css, Javascript, and Dom; and the BacEnd with RestFul services in Java, storing the data in a MySql database. The system will allow doctors to keep track of their patients medical records, including their basic profile (personal data, photo, emergency contact information, etc.), medical history (diseases, allergies, surgeries, etc.), appointment history (date and time, reason, symptoms, diagnosis, medication prescriptions, etc.), and laboratory test results (pdf documents). It will also allow them to view the appointment schedule in an agenda format.",
+    "functionalities": [
+      "Doctor-Registration: A doctor can register in the system and use it by paying a monthly fee. Upon registration, the doctor should indicate their ID and password and their profile, which includes their specialty, consultation cost, location, weekly schedule, and appointment frequency (e.g. every hour, every half hour, every 20 minutes, etc.), as well as their photo and presentation or review.",
+      "Doctor-Identification: Identification will be done using the ID and password used during registration. There will be a link to the doctor registration page for cases where they have not yet registered. Once identified, it will take them to their agenda page.",
+      "Doctor-Patients: Allows the management (\"maintenance\") of a doctor's patients: basic profile and medical history.",
+      "Doctor-Agenda: Once a doctor logs into the system, it will present their appointment schedule for that day. From there, they can schedule new appointments in their available spaces, attend an appointment, cancel an appointment, or move (drag-and-drop) an appointment to another space. They can also navigate week by week (forward and backward) in the agenda.",
+      "Doctor-Scheduling-Appointment: By clicking on an available space in the agenda, or by using the \"Add Appointment\" option from the patient's view, the doctor can schedule a new appointment. A window will open for this purpose. If it comes from the agenda (the date and time have already been selected), they must select one of their patients. If it comes from the patient's view (the patient has already been selected), they must select a date and time. In both cases, they must note the type and reason for the appointment and register it. The agenda and the patient's appointment list will reflect this information.",
+      "Doctor-Attend-Appointment: By clicking on an appointment in the agenda or on a patient's appointment, a window will open to record the appointment results. They can record case information: symptoms, diagnosis, prescriptions, etc.",
+      "Doctor-Patient-Appointments: Lists the appointment history of a specific patient previously selected, allowing the doctor to view details of any of them and \"attend\" a pending appointment.",
+      "Doctor-Patient-Tests: Allows the management of a patient's laboratory tests (pdf files). They must allow descriptive labels and associate them with a specific appointment.",
+      "Administrator-List of Doctors: Lists the doctors and allows for the approval of new registrations."
+    ]
+  }
+  
+  
