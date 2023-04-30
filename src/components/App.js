@@ -4,6 +4,8 @@ import Welcome from './Welcome';
 import Technologies from './Technologies';
 import AboutMe from './AboutMe';
 import Projects from './Projects';
+import Contact from './Contact';
+
 
 function App() {
   return (
@@ -22,8 +24,13 @@ function App() {
       </div>
 
       <Projects/>
-     
+
+
+      <Contact/>
     </div>
+    
+      
+
   );
 }
 

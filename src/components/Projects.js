@@ -7,7 +7,7 @@ function Projects() {
   return (
     <div className='whitesection'>
 
-         <h2>Some of my projects</h2>
+  <h2 className='titleprojects' >SOME OF MY PROJECTS</h2>
 
          <ProjectsInfo/>
     </div>

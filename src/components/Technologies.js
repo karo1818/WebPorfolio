@@ -5,6 +5,8 @@ import css from "../images/Css.webp"
 import html from "../images/Html.webp"
 import javascript from "../images/Javascript.webp"
 import react from "../images/React.webp"
+import jquery from '../images/jquery.webp';
+import Json from "../images/Json.webp"
 
 function Technologies() {
   return (
@@ -16,6 +18,8 @@ function Technologies() {
      <img alt='javascript' className='tools' src={javascript} />
      <img alt='react' className='tools' src={react} />
      <img alt='boostrap' className='tools' src={boostrap} />
+     <img alt='jquery' className='tools' src={jquery} />
+     <img alt='json' className='tools' src={Json} />
      </div>
 
    </div>

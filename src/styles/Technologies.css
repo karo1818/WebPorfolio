@@ -1,5 +1,5 @@
 .principal-container{
-  
+    
     width: 500px;
     min-height: 220px;
     background-color: #d0d0d5;
@@ -11,7 +11,8 @@
 
   .tareas-lista-principal {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: space-around;
     align-items: center;
   }
 
@@ -20,16 +21,16 @@
    }
    
    .tools {
-    width: calc(20% - 10px);
-    height: 100%;
-    animation: mover 1s ease-in-out infinite alternate;
+    width: 5em;
+    padding: 1em;
+    animation: mover 2s ease-in-out infinite alternate;
   }
   
   @keyframes mover {
     from {
-      transform: translate(0, 0);
+      transform:rotate(10deg);
     }
     to {
-      transform: translate(5px, 5px);
+      transform:rotate(-20deg);
     }
   }

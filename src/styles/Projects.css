@@ -1,21 +1,35 @@
+.titleprojects {
+    padding-top: 3%;
+    font-size: 500%;
+    color: #1D1D1D;
+  
+            
+}
+
+
 .whitesection{
     text-align: center;
     margin-top: 2%;
-    background-color: white;
-  }
+    background-color: #FFFFFF;}
 
 .infoprojects{
+    font-family: sans-serif;
+    font-size: 1em;
+    text-align: justify;
+    line-height:1.5em;
+    margin:1em;
     width: 100%;
 	height: 30vh;
 	border: 5px solid #cccccc;
-	margin: 5px;
-    text-align: justify;
+    border-radius: 30px;
+    padding: 1em;
 }
 
 .screens{
     height: 30vh;
     width:100% ;
     margin-top: 8vh;
+    text-align: center;
 }
 
 .contenedor-projects{
@@ -33,14 +47,16 @@
 
 }
 
-.projects-internos-img img{
-    display: none;
+.projects-internos-img{
+
     text-align: center;
     width: 50%;
     margin-left: 10vh;
     margin-right: 10vh;
 
 }
-.projects-internos img:first-child{
-    display: block;
-}
+
+
+
+
+  

@@ -1,0 +1,39 @@
+.footer{
+
+    background-color: black;
+    text-align: right;
+    padding:0.5em ;
+}
+
+
+.icons{
+    margin-left: 5px;
+    filter: grayscale(1);
+    display: inline-flex;
+    width: 4em;
+    height: 4em;
+    transition-property: 
+    outline-offset, outline-color,background-color;
+    transition-duration: 0.25s;
+}
+
+.icons:hover{
+    filter: grayscale(0);
+    animation: shake 0.25s;
+}
+
+
+@keyframes shake{
+    10%{
+        transform: rotate(15deg);
+    }
+    20%{
+        transform: rotate(-15deg);
+    }
+    30%{
+        transform: rotate(15deg);
+    }
+    40%{
+        transform: rotate(-15deg);
+    }
+}
