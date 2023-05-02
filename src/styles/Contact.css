@@ -18,6 +18,7 @@
 }
 
 .icons:hover{
+    cursor: pointer;
     filter: grayscale(0);
     animation: shake 0.25s;
 }

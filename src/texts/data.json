@@ -1,9 +1,0 @@
-{
-    "project": "Project with a FRONTEND (interface) and a BACKEND (service) component, for the management of the ELECTRONIC MEDICAL RECORD of patients who are clients of doctors. The FrontEnd  developed using Html, Css, Javascript, and Dom; and the BackEnd with RestFul services in Java, storing the data in a MySql database. The system allow doctors to keep track of their patients medical records, including their basic profile (personal data, photo, emergency contact information, etc.), medical history (diseases, allergies, surgeries, etc.), appointment history (date and time, reason, symptoms, diagnosis, medication prescriptions, etc.), and laboratory test results (pdf documents).",
-    "functionalities": [
-      
-    
-    ]
-  }
-  
-  

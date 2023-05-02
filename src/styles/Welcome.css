@@ -3,7 +3,8 @@
     display: flex;
     justify-content: space-between;
     text-align: center;
-    margin-bottom: 10%;
+    padding-top: 10em;
+    margin-bottom: 8%;
 }
 
 .left {
@@ -15,6 +16,7 @@
 }
 
 .greeting {
+    margin-top: 60em;
     color: white;
     font-size: 5rem;
     text-align: left;

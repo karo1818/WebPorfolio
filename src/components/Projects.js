@@ -5,9 +5,9 @@ import ProjectsInfo from './ProjectsInfo';
 function Projects() {
   
   return (
-    <div className='whitesection'>
+    <div id='projects'  className='whitesection'>
 
-  <h2 className='titleprojects' >SOME OF MY PROJECTS</h2>
+  <h2  className='titleprojects' >SOME OF MY PROJECTS</h2>
 
          <ProjectsInfo/>
     </div>

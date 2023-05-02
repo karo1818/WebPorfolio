@@ -3,9 +3,11 @@
     align-items: center;
     justify-content: space-between;
     background-color: #FFF;
-    padding: 8px;
-    border-radius: 10px;
-    margin-bottom: 2%;
+    padding: 7px;
+    margin-bottom: 1%;
+    position:fixed;
+    z-index: 999;
+    width: 100%;
 }
 
 .navbar a{
@@ -14,7 +16,7 @@
 }
 
 .nav_logo{
-    margin-right: 50px;
+    margin-left: 1em;
     width: 8%;
     border-radius: 50%;
 }
@@ -22,7 +24,7 @@
 .list{
     list-style: none;
     display: flex;
-
+    padding-right: 2em;
     gap: 25px;
 }
 
@@ -33,3 +35,9 @@
 .navbar{
     height: 80px;
 }
+
+.NavBarbtn:hover {
+    border-bottom: 3px solid grey;
+   
+  }
+  

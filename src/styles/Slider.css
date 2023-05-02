@@ -1,0 +1,43 @@
+
+
+.slider{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+}
+
+.imgslider{
+  width: 70%;
+  border-radius: 5px;
+}
+
+
+.leftbtn{
+
+  background-image: url("../images/derecha.png");
+  padding: 2em;
+  width: 5%;
+  height: 5%;
+  border-radius: 50%;
+  background-size: cover;
+  cursor: pointer;
+  border: none;
+  transform: rotate(180deg);
+}
+
+.rightbtn{
+  background-image: url("../images/derecha.png");
+  padding: 2em;
+  width: 5%;
+  height: 5%;
+  border-radius: 50%;
+  background-size: cover;
+  cursor: pointer;
+  border: none;
+}
+
+.leftbtn:hover, .rightbtn:hover{
+
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}

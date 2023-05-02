@@ -1,26 +1,30 @@
 import React, { useState, useEffect } from 'react';
 import "../styles/Projects.css"
-import projectData from "../texts/data.json"
-import prueba1 from "../images/prueba1.jpeg"
+import projectMedical from "../texts/Medical.json"
+import projectMovies from "../texts/Movies.json"
+import prueba1 from "../images/prueba1.png"
 import prueba2 from "../images/prueba2.jpeg"
+import Slider from "./Slider";
 
 function ProjectsInfo() {
+
+
+ const images = [prueba1, prueba2];
+  
+
+        
+
+
+  
+
+
   const [dataLoaded, setDataLoaded] = useState(false);
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const images = [prueba1, prueba2];
+ 
 
   useEffect(() => {
     setDataLoaded(true);
   }, []);
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      const nextIndex = (currentIndex + 1) % images.length;
-      setCurrentIndex(nextIndex);
-    }, 10000);
-
-    return () => clearInterval(interval);
-  }, [currentIndex, images.length]);
 
 
 
@@ -30,87 +34,44 @@ function ProjectsInfo() {
       <div className='contenedor-projects'>
         {dataLoaded && (
           <div className='projects-internos'>
-            <h3>MEDICAL DATES SERVICES</h3>
-            <textarea
-              className='infoprojects'
-              defaultValue={`${projectData.project}}`}
-            />
+            <h3 className='tittleprojects'>MEDICAL DATES SERVICES</h3>
+            <p className='infoprojects'>
+              {`${projectMedical.project}`}
+            </p>
+
+            
           </div>
         )}
         
 
         <div className='projects-internos-img'>
-          {images.map((src, index) => (
-            <img 
-              key={index} 
-              alt={`prueba${index + 1}`}
-              className='screens'
-              src={src}
-              style={{ display: currentIndex === index ? 'block' : 'none' }}
-            />
-          ))}
+          
+       <Slider images={images} />
+        
         </div>
       </div>
 
 
-    {/*------------------------------SEGUNDO PROYECTO--------------------------- */}
+     {/*------------------------------SEGUNDO PROYECTO--------------------------- */}
    
-      <div className='contenedor-projects'> 
-        
-      <div className='projects-internos-img'>
-          {images.map((src, index) => (
-            <img 
-              key={index} 
-              alt={`prueba${index + 1}`}
-              className='screens'
-              src={src}
-              style={{ display: currentIndex === index ? 'block' : 'none' }}
-            />
-          ))}
-        </div>
-        
+     <div className='contenedor-projects'>
         {dataLoaded && (
           <div className='projects-internos'>
-            <h3>MEDICAL DATES SERVICES</h3>
-            <textarea
-              className='infoprojects'
-              defaultValue={`${projectData.project}\n\nFunctionalities:\n${projectData.functionalities.join('\n')}`}
-            />
+            <h3 className='tittleprojects'>MOVIE TICKETS PURCHASE</h3>
+            <p className='infoprojects'>
+              {`${projectMovies.project}`}
+            </p>
           </div>
         )}
-
         
-      </div>
-
-
-{/*------------------------------TERCER PROYECTO--------------------------- */}
-
-      <div className='contenedor-projects'>
-        {dataLoaded && (
-          <div className='projects-internos'>
-            <h3>MEDICAL DATES SERVICES</h3>
-            <textarea
-              className='infoprojects'
-              defaultValue={`${projectData.project}\n\nFunctionalities:\n${projectData.functionalities.join('\n')}`}
-            />
-          </div>
-        )}
 
         <div className='projects-internos-img'>
-          {images.map((src, index) => (
-            <img 
-              key={index} 
-              alt={`prueba${index + 1}`}
-              className='screens'
-              src={src}
-              style={{ display: currentIndex === index ? 'block' : 'none' }}
-            />
-          ))}
+          
+        <Slider images={images} />
+        
         </div>
       </div>
-
-
-
+        
     </div>
   );
 }

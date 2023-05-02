@@ -6,7 +6,6 @@ import AboutMe from './AboutMe';
 import Projects from './Projects';
 import Contact from './Contact';
 
-
 function App() {
   return (
 
@@ -24,6 +23,7 @@ function App() {
       </div>
 
       <Projects/>
+      
 
 
       <Contact/>
