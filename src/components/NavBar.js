@@ -14,7 +14,7 @@ function Navbar() {
         <ul className="list">
           <li className='NavBarbtn'><a href="#home">HOME</a></li>
           <li className='NavBarbtn'><a href="#projects">PROJECTS</a></li>
-          <li className='NavBarbtn'><a href="https://drive.google.com/drive/u/2/folders/10wl-6KICemaxRby7yWX0MDvcSucArUKv">CONTACT</a></li>
+          <li className='NavBarbtn'><a href="#social">CONTACT</a></li>
         </ul>
       </div>
     </nav>

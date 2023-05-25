@@ -1,0 +1,50 @@
+.footer{
+    display: flex;
+    background-color: black;
+    padding:0.5em ;
+    justify-content: center;
+}
+
+
+
+.footericons{
+    
+   margin-left: 50%;
+}
+.icons{
+    margin-left: 10px;
+    filter: grayscale(1);
+    display: inline-flex;
+    width: 3em;
+    height: 3em;
+    transition-property: 
+    outline-offset, outline-color,background-color;
+    transition-duration: 0.25s;
+}
+
+.icons:hover{
+    cursor: pointer;
+    filter: grayscale(0);
+    animation: shake 0.25s;
+}
+
+.lastupdate{
+    color: white;
+    
+}
+
+
+@keyframes shake{
+    10%{
+        transform: rotate(15deg);
+    }
+    20%{
+        transform: rotate(-15deg);
+    }
+    30%{
+        transform: rotate(15deg);
+    }
+    40%{
+        transform: rotate(-15deg);
+    }
+}

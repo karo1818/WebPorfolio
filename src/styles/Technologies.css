@@ -2,7 +2,7 @@
     
     width: 500px;
     min-height: 220px;
-    background-color: #d0d0d5;
+    background-color: #D2E8E4;
     padding: 25px;
     margin: 10px;
     border-radius: 26px;
@@ -23,7 +23,8 @@
    .tools {
     width: 5em;
     padding: 1em;
-    animation: mover 2s ease-in-out infinite alternate;
+    transform: translateX(0px);
+    animation: levita 6s ease-in-out infinite alternate;
   }
 
   .tools:hover{
@@ -31,11 +32,14 @@
     cursor: pointer;
   }
   
-  @keyframes mover {
-    from {
-      transform:rotate(10deg);
+  @keyframes levita {
+    0% {
+      transform:translateY(0px);
     }
-    to {
-      transform:rotate(-20deg);
+    50% {
+      transform:translateY(-20px);
+    }
+    100%{
+      transform:translateY(0px);
     }
   }

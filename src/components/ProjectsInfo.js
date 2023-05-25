@@ -2,17 +2,14 @@ import React, { useState, useEffect } from 'react';
 import "../styles/Projects.css"
 import projectMedical from "../texts/Medical.json"
 import projectMovies from "../texts/Movies.json"
-import prueba1 from "../images/prueba1.png"
 import prueba2 from "../images/prueba2.jpeg"
 import Slider from "./Slider";
 
 function ProjectsInfo() {
 
 
- const images = [prueba1, prueba2];
+ const images = [prueba2];
   
-
-        
 
 
   
