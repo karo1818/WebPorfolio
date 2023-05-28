@@ -1,12 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import "../styles/Filter.css"
 import axios from 'axios';
+import Photos from './Photos';
 
 function Filter() {
   const [searchTerm, setSearchTerm] = useState('');
   const [characters, setCharacters] = useState([]);
   const [originalCharacters, setOriginalCharacters] = useState([]);
   const [hoveredCharacter, setHoveredCharacter] = useState(null);
+  const [showPhotos, setShowPhotos] = useState(false);
 
   const handleSearch = (event) => {
     event.preventDefault();
@@ -48,41 +50,55 @@ function Filter() {
     fetchData();
   }, []);
 
+  const handleNextApiClick = () => {
+    setShowPhotos(true);
+  };
+
   return (
     <div className='filter-block'>
-      <h1 className='tittleAPI'>Consuming Rick and Morty API</h1>
-      <div>
-        <form onSubmit={handleSearch}>
-          <input
-            type="text"
-            placeholder="Buscar personaje por nombre..."
-            value={searchTerm}
-            onChange={(event) => {
-              setSearchTerm(event.target.value);
-            }}
-          />
-          <button className='buscar' type="submit">Buscar</button>
-        </form>
-      </div>
-
-      <div className="character-grid">
-        {characters.map(character => (
-          <div
-            key={character.id}
-            className={`character-card ${hoveredCharacter && character.id === hoveredCharacter.id ? 'hovered' : ''}`}
-            onMouseEnter={() => handleMouseEnter(character)}
-            onMouseLeave={handleMouseLeave}
-            onClick={() => handleCharacterClick(character.name)}
-          >
-            <img className='charactersPhoto' src={character.image} alt={character.name} />
-            <div className="character-info">
-              <h2>{character.name}</h2>
-              <p>Status: {character.status}</p>
-              <p>Species: {character.species}</p>
-            </div>
+      {showPhotos ? (
+        <Photos />
+      ) : (
+        <>
+          <div className='divbtnapi'>
+            <button className='btnApi' onClick={handleNextApiClick}>Next API</button>
           </div>
-        ))}
-      </div>
+          
+          <h1 className='tittleAPI'>Consuming Rick and Morty API</h1>
+          <div>
+            <form onSubmit={handleSearch}>
+              <input
+                type="text"
+                placeholder="Buscar personaje por nombre..."
+                value={searchTerm}
+                onChange={(event) => {
+                  setSearchTerm(event.target.value);
+                }}
+              />
+              <button className='buscar' type="submit">Buscar</button>
+            </form>
+          </div>
+
+          <div className="character-grid">
+            {characters.map(character => (
+              <div
+                key={character.id}
+                className={`character-card ${hoveredCharacter && character.id === hoveredCharacter.id ? 'hovered' : ''}`}
+                onMouseEnter={() => handleMouseEnter(character)}
+                onMouseLeave={handleMouseLeave}
+                onClick={() => handleCharacterClick(character.name)}
+              >
+                <img className='charactersPhoto' src={character.image} alt={character.name} />
+                <div className="character-info">
+                  <h2>{character.name}</h2>
+                  <p>Status: {character.status}</p>
+                  <p>Species: {character.species}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </>
+      )}
     </div>
   );
 }

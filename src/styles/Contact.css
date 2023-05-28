@@ -1,6 +1,7 @@
 #video-container {
+    margin-left: -8px;
     position: relative;
-    width: 100%;
+    width: 110%;
     height: 80vh;
     overflow: hidden;
     display: flex; /* Agrega una propiedad de visualización de flexbox */
@@ -32,7 +33,7 @@
   }
   
   .divcontact {
-    background-color: #D2E8E4;
+    background-color: #3E644E;
     height: 30em;
     width: 40em;
     margin: 0 auto; 

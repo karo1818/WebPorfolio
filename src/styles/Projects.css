@@ -7,8 +7,9 @@
 
 
 .whitesection{
+    margin: -10px;
     text-align: center;
-    background-color: #000000;
+    background-color: #3E644E;
     background-attachment: fixed;
     background-size: cover;
     padding-bottom: 5em;
